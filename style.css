@@ -1,16 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 img {
   position: absolute;
 }
 
-.gameParent {
-  padding: 1rem;
-}
 .gameParent .coinsImgs {
   width: 100%;
   height: 50vh;
 }
-.gameParent .buttonsParent {
+.gameParent .dial {
   width: 100%;
+  height: 50vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background: #212121;
+}
+.gameParent .dial .dialContent {
+  width: 50%;
+}
+.gameParent .dial .dialContent input {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  background: transparent;
+  border: 1px solid #3b3b3b;
+  color: white;
+  padding: 0 1rem;
+}
+.gameParent .dial .dialContent .ok {
+  width: 100%;
+  height: 50px;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .gameParent .dial .dialContent {
+    width: 95%;
+  }
+}
+.gameParent .dial .buttons {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 40px);
+  gap: 1rem;
+}
+.gameParent .dial button {
+  background: #3b3b3b;
+  color: white;
+  border: none;
 }/*# sourceMappingURL=style.css.map */

@@ -53,11 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-for (let i = 0; i < 10; i++) {
+for (let i = 9; i >= 1; i--) {
     let btn = document.createElement("button");
     btn.className = "myButton";
     btn.innerHTML = i;
-    document.querySelector(".buttons").appendChild(btn);
+    document.querySelector(".buttons").prepend(btn);
 }
 let btns = document.querySelectorAll(".myButton")
 for (const i of btns) {
